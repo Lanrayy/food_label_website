@@ -12,48 +12,45 @@ $(function(){
         var salt = document.querySelector('#salt').value;
 
         //If the value is left empty then make it zero
-        if(energyKJ == "" || isNaN(Number.energyKJ) == true)
+        if(energyKJ == "")
         {
             energyKJ = 0;
         }
 
-        if(energyKcal == "" || isNaN(Number.energyKcal) == true)
+        if(energyKcal == "")
         {
             energyKcal = 0;
         }
         
-        if(fat == "" || isNaN(Number.fat) == true)
+        if(fat == "")
         {
             fat = 0;
         }
 
-        if(saturated_fat == "" || isNaN(Number.saturated_fat) == true)
+        if(saturated_fat == "")
         {
             saturated_fat = 0
         } 
 
-        if(sugars == "" || isNaN(Number.sugars) == true)
+        if(sugars == "")
         {
             sugars = 0;
         }
         
-        if(salt == "" || isNaN(Number.salt) == true)
+        if(salt == "")
         {
             salt = 0;
         }
 
-        if(protein == "" || isNaN(Number.protein) == true)
+        if(protein == "")
         {
             protein = 0;
         }
 
-        if(carbohydrates == "" || isNaN(Number.carbohydrates) == true)
+        if(carbohydrates == "")
         {
             carbohydrates = 0;
         }
-
-        console.log(energyKJ);
-        console.log(energyKcal);
 
         
         //Calculate FOP percentages
