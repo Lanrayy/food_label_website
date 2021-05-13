@@ -97,6 +97,7 @@ button:hover{
 #calculated-results-container{
     height: 700px;
     margin-top: 20px;
+    display: none;
 }
 
 .front-of-pack-container{
@@ -247,11 +248,12 @@ button:hover{
         font-size: 12px;
         display: flex;
         flex-direction: column;
-        width: 400px;
+        width: 380px;
     }
 
     .test-results-container{
-        width: 400px;
+        width: 380px;
+        height: 600px;
     }
 
     label{
@@ -267,5 +269,33 @@ button:hover{
     }
 
 
+    /* Front of pack */
+
+    #calculated-results-container{
+        height: 600px;
+    }
+
+    .front-of-pack-container{
+        width: 380px;
+        height: 200px;
+    }
+
+    .front-of-pack-box{
+        width: 80px;
+        height: 100px;
+    }
+
+    .colour{
+        width: 50px;
+    }
+
+    /* Back of pack container */
+    .back-of-pack-container{
+        width: 380px;
+    }
+
+    .bop-column{
+        width: 190px;
+    }
 
 }

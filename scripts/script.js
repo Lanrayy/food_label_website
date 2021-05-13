@@ -154,9 +154,10 @@ $(function(){
         $("#bop-salt").html(salt+"g");
 
 
-
+        //SHow the results
         $(".front-of-pack-container").fadeIn(1000);
         $(".back-of-pack-container").fadeIn(1000);
+        $("#calculated-results-container").fadeIn(1000);
 
 
 
