@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Food Label Creator</title>
+        <link rel="stylesheet" href="food-labelling.css">
+        <script src="scripts/jquery.js"></script>
+        <script src="scripts/script.js"></script>
+
+    </head>
+
+    <body>
+        <div class="page-container">
+
+            <div class="test-results-container">
+                <div id="title">
+                    <h1>Food Label Creator</h1>
+                    <p>Please enter the nutritional values below</p>
+                </div>
+                <form>
+                    <label for="energyKJ"> 
+                        <p>
+                            Please enter details for Energy(KJ): 
+                        </p>
+                        <input id="energyKJ" type="text"/>
+                    </label>
+
+                    <label for="energyKcal"> 
+                        <p>
+                            Please enter details for Energy(kcal): 
+                        </p>
+                        <input id="energyKcal" type="text"/>
+                    </label>
+
+                    <label for="protein"> 
+                        <p>
+                            Please enter details for Protein: 
+                        </p>
+                        <input id="protein" type="text"/>
+                    </label>
+
+                    <label for="fat"> 
+                        <p> 
+                            Please enter details for Fat: 
+                        </p>
+                        
+                        <input id="fat" for="food_labelling"/> 
+                    </label>
+
+                    <label for="saturated-fat"> 
+                        <p>
+                            Please enter details for Saturated Fat: 
+                        </p>
+                        <input id="saturated-fat" type="text"/>
+                    </label>
+
+                    <label for="carbohydrates"> 
+                        <p>
+                            Please enter details for Carbohydrates: 
+                        </p>
+                        
+                        <input id="carbohydrates" type="text"/>
+                    </label>
+
+                    <label for="sugars"> 
+                        <p>
+                            Please enter details for Sugars:
+                        </p>
+                        <input id="sugars" type="text"/>
+                    </label>
+
+                    <label for="salt"> 
+                        <p>
+                            Please enter details for Salt: 
+                        </p>
+                        <input id="salt" type="text"/>
+                    </label>
+                   
+                </form>
+
+                <button id="submit-button">Calculate</button>
+            </div>
+
+
+
+            <div id="calculated-results-container"> 
+                <div class="back-of-pack-container">
+                    <div class="back-of-pack-information-title">
+                        <h1>Back of pack information</h1>
+                    </div>
+                    
+                    <div id="bop-title" > 
+                        <p><strong>Nutritional information</strong></p>
+                        <p>Typical values per 100g</p>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column">Energy value</div>
+                        <div class="bop-column">
+                            <p id="bop-energyKJ"></p>
+                            <p id="bop-energyKcal"></p>
+                         </div>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column">Fat </div>
+                        <div class="bop-column">
+                            <p id="bop-fat"></p>
+                        </div>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column"> <p>of which saturates</p></div>
+                        <div class="bop-column">
+                            <p id="bop-saturates"></p>    
+                        </div>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column"> <p>Carbohydrates</p></div>
+                        <div class="bop-column">
+                            <p id="bop-carbohydrates"></p>    
+                        </div>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column"> <p>Protein</p></div>
+                        <div class="bop-column">
+                            <p id="bop-protein"></p>    
+                        </div>
+                    </div>
+                    <div class="bop-row"> 
+                        <div class="bop-column"> <p>Salt</p></div>
+                        <div class="bop-column">
+                            <p id="bop-salt"></p>    
+                        </div>
+                    </div>
+    
+                </div>
+    
+                <div class="front-of-pack-container">
+                    <h1> Front of pack information</h1>
+                    <div class="front-of-pack">
+                        <div id="fop-energy" class="front-of-pack-box" >
+                            <p>Energy</p>
+                            <p id="fop-KJ">0KJ</p>
+                            <p id="fop-Kcal">0Kcal</p>
+                            
+                            <p id= "fop-energy-percentage"></p>
+                        </div>
+                        <div class="front-of-pack-box">
+                            <p>Fat</p>
+                            <div id="fat-colour" class="colour">
+                                <p id="fop-fat">0g</p>
+                            </div>
+                            <p id="fop-fat-percentage">0%</p>
+                        </div>
+                        <div class="front-of-pack-box">
+                            <p>Saturates</p>
+                            <div id="saturates-colour" class="colour">
+                                <p id="fop-saturated-fat">0g</p>
+                            </div>
+                            <p id="fop-saturated-fat-percentage">0%</p>
+                        </div>
+                        <div class="front-of-pack-box">
+                            <p>Sugars</p>
+                            <div id="sugars-colour" class="colour">
+                                <p id="fop-sugars">0g</p>
+                            </div>
+                            <p id="fop-sugars-percentage">0%</p>
+                        </div>
+                        <div class="front-of-pack-box">
+                            <p>Salt</p>
+                            <div id="salt-colour" class="colour">
+                                <p id="fop-salt">0g</p>
+                            </div>
+                            <p id="fop-salt-percentage">0%</p>
+                        </div>
+                        
+                    </div>
+                    <div class="typical-values-notice">
+                        <p>Typical values (as sold) per 100g: </p><p id="typical-values">0KJ / 0Kcal </p>
+                    </div>
+                    
+                </div>
+    
+            </div>
+
+
+        </div>
+
+       <div id="footer">
+           <p> Made by Lanre Sodeinde | @madebylanray | ©2021 </p>
+           <img id="logo" src="madebylanray logo v5 transparent blue text.png" />
+       </div>
+    </body>
+</html>
+
+
+
