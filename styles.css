@@ -30,9 +30,11 @@ body{
     width: 600px;
     justify-content: center;
     background-color: rgb(230, 230, 230);
+    border-radius: 30px;
+    box-shadow: 2px 2px 20px -5px gray;
     padding: 20px;
-    border: 1px solid black;
-    margin-top: 20px
+    margin-top: 20px;
+    z-index: 0;
 }
 
 #title{
@@ -40,8 +42,9 @@ body{
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
+
  #title h1{
      color: rgb(70, 80, 172);
  }
@@ -70,11 +73,12 @@ input{
     width: inherit;
     height: 45px;
     padding-left: 10px;
-    border: 1px solid rgb(204, 190, 190);
+    border: 1px solid rgb(223, 223, 223);
     background-color: rgb(255, 255, 255);
     border-radius: 0px 20px 20px 0px;
     margin-left: 10px;
 }
+
 
 button{
     background-color: rgb(70, 80, 172);
@@ -82,7 +86,7 @@ button{
     width: 550px;
     border: none;
     color: white;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 20px;
     font-size: 16px;
 }
@@ -93,7 +97,6 @@ button:hover{
 
 
 /* FRONT OF PACK INFORMATION */
-
 #calculated-results-container{
     height: 700px;
     margin-top: 20px;
@@ -208,6 +211,7 @@ button:hover{
 }
 
 #footer{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;

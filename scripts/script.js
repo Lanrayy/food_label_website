@@ -153,7 +153,6 @@ $(function(){
         //back of pack Salt
         $("#bop-salt").html(salt+"g");
 
-
         //SHow the results
         $(".front-of-pack-container").fadeIn(1000);
         $(".back-of-pack-container").fadeIn(1000);
