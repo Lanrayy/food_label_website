@@ -29,9 +29,9 @@ body{
     height: 700px;
     width: 600px;
     justify-content: center;
-    background-color: rgb(230, 230, 230);
+    background-color: rgba(243, 243, 243, 0.856);
     border-radius: 30px;
-    box-shadow: 2px 2px 20px -5px gray;
+    box-shadow: 2px 2px 20px -5px rgba(139, 139, 139, 0.781);
     padding: 20px;
     margin-top: 20px;
     z-index: 0;
