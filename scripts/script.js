@@ -167,7 +167,7 @@ $(function(){
     $("#submit-button").on("click",function(){
 
         //If it is in mobile view
-        if(screen.width <= 410){
+        if(screen.width <= 375){
             jQuery("html").animate({ 
                 scrollTop:jQuery("#calculated-results-container").offset().top
             })

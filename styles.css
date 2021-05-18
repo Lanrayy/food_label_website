@@ -246,17 +246,17 @@ button:hover{
 }
 
 
-@media screen and (max-width:410px){
+@media screen and (max-width:375px){
 
     .page-container{
         font-size: 12px;
         display: flex;
         flex-direction: column;
-        width: 380px;
+        width: 370px;
     }
 
     .test-results-container{
-        width: 380px;
+        width: 370px;
         height: 600px;
     }
 
@@ -280,7 +280,7 @@ button:hover{
     }
 
     .front-of-pack-container{
-        width: 380px;
+        width: 370px;
         height: 200px;
     }
 
@@ -295,11 +295,11 @@ button:hover{
 
     /* Back of pack container */
     .back-of-pack-container{
-        width: 380px;
+        width: 370px;
     }
 
     .bop-column{
-        width: 190px;
+        width: 185px;
     }
 
 }
