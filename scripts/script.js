@@ -1,4 +1,5 @@
 $(function(){
+
     $("#submit-button").on("click",function(){
         //$(".output-container").slideToggle(2000);
         //$(".output-container").toggle();
@@ -157,9 +158,26 @@ $(function(){
         $(".front-of-pack-container").fadeIn(1000);
         $(".back-of-pack-container").fadeIn(1000);
         $("#calculated-results-container").fadeIn(1000);
-
-
+        
 
     });
+
+
+    //Scroll to the Results when button is clicked
+    $("#submit-button").on("click",function(){
+
+        //If it is in mobile view
+        if(screen.width <= 410){
+            jQuery("html").animate({ 
+                scrollTop:jQuery("#bop-title").offset().top
+            })
+        }
+        
+    });
+
+
+
+
+
 });
 
