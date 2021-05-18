@@ -230,10 +230,48 @@ button:hover{
 /* PRINT STYLES */
 @media print{
 
+    body{
+        font-size: 12px;
+    }
+
+    /* BACK OF PACK PRINT STYLES */
+
+    .back-of-pack-container{
+        height: 230px;
+    }
+
+    .back-of-pack-information-title h1{
+        font-size:14px;
+    }
+
+    .bop-row{
+        height: 20px;
+    }
+
+    #energy-row{
+        height: 40px;
+    }
+
+
+
+
+
+    .front-of-pack-container h1{
+        font-size: 14px;
+    }
+
+    .front-of-pack-container{
+        height: 200px;
+    }
+
+
+    
+
     .test-results-container
     {
         display: none;
     }
+
 
     .back-of-pack-container
     {
