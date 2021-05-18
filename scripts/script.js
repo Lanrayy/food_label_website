@@ -169,7 +169,7 @@ $(function(){
         //If it is in mobile view
         if(screen.width <= 410){
             jQuery("html").animate({ 
-                scrollTop:jQuery("#bop-title").offset().top
+                scrollTop:jQuery("#calculated-results-container").offset().top
             })
         }
         
