@@ -101,7 +101,7 @@ button{
     width: 550px;
     border: none;
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     border-radius: 20px;
     font-size: 16px;
 }
@@ -398,21 +398,26 @@ button:hover{
 
     .test-results-container{
         width: 370px;
-        height: 600px;
+        height: 620px;
     }
 
     label{
         width: 360px;
+        height: 20px;
     }
 
     input{
-        height: 30px; 
+        height: 20px; 
+        width: 100px;
+
     }
 
-    
 
     button{
+        margin-top: 20px;
         width: 350px;
+        height: 30px;
+        font-size: 12px;
     }
 
 
@@ -445,4 +450,7 @@ button:hover{
         width: 185px;
     }
 
+    #footer{
+        font-size:12px;
+    }
 }
