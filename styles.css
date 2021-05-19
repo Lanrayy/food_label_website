@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    //border: 1px solid black;
 }
 
 body{
@@ -290,6 +291,10 @@ button:hover{
         height: 20px;
     }
 
+    .bop-column{
+        width: 50%;
+    }
+
     #energy-row{
         height: 40px;
     }
@@ -426,6 +431,7 @@ button:hover{
     #calculated-results-container{
         height: 600px;
         width: 370px;
+        border: 1px solid black;
     }
 
     .front-of-pack-container{
@@ -447,9 +453,11 @@ button:hover{
         width: 370px;
     }
 
-    .bop-column{
-        width: 185px;
+    .bop-row{
+       width: 100%;
     }
+
+ 
 
     #footer{
         font-size:12px;
