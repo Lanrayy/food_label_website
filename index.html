@@ -19,11 +19,17 @@
                     <p>Please enter the nutritional values below</p>
                 </div>
                 <form>
+                    <label for="date"> 
+                        <p>
+                            Please enter the date of report: 
+                        </p>
+                        <input id="date" type="date" />
+                    </label>
                     <label for="energyKJ"> 
                         <p>
                             Please enter details for Energy(KJ): 
                         </p>
-                        <input id="energyKJ" type="text"/>
+                        <input id="energyKJ" type="text" />
                     </label>
 
                     <label for="energyKcal"> 
@@ -45,7 +51,7 @@
                             Please enter details for Fat: 
                         </p>
                         
-                        <input id="fat" for="food_labelling"/> 
+                        <input id="fat" type="text"/> 
                     </label>
 
                     <label for="saturated-fat"> 
@@ -55,9 +61,23 @@
                         <input id="saturated-fat" type="text"/>
                     </label>
 
+                    <label for="mono-unsaturated-fat"> 
+                        <p>
+                            Please enter details for Mono-unsaturated Fat: 
+                        </p>
+                        <input id="mono-unsaturated-fat" type="text"/>
+                    </label>
+
+                    <label for="poly-unsaturated-fat"> 
+                        <p>
+                            Please enter details for Poly-unsaturated Fat: 
+                        </p>
+                        <input id="poly-unsaturated-fat" type="text"/>
+                    </label>
+
                     <label for="carbohydrates"> 
                         <p>
-                            Please enter details for Carbohydrates: 
+                            Please enter details for Available Carbohydrates: 
                         </p>
                         
                         <input id="carbohydrates" type="text"/>
@@ -65,9 +85,37 @@
 
                     <label for="sugars"> 
                         <p>
-                            Please enter details for Sugars:
+                            Please enter details for Total Sugars:
                         </p>
                         <input id="sugars" type="text"/>
+                    </label>
+
+                    <label for="dietary-fibre"> 
+                        <p>
+                            Please enter details for Dietary Fibre:
+                        </p>
+                        <input id="dietary-fibre" type="text"/>
+                    </label>
+
+                    <label for="sodium"> 
+                        <p>
+                            Please enter details for Sodium:
+                        </p>
+                        <input id="sodium" type="text"/>
+                    </label>
+
+                    <label for="moisture"> 
+                        <p>
+                            Please enter details for Moisture:
+                        </p>
+                        <input id="moisture" type="text"/>
+                    </label>
+
+                    <label for="ash"> 
+                        <p>
+                            Please enter details for Ash:
+                        </p>
+                        <input id="ash" type="text"/>
                     </label>
 
                     <label for="salt"> 
@@ -83,6 +131,75 @@
             </div>
 
 
+            <div class="print-header">
+                <h3>TEST REPORT</h3>
+                <p>Registered Consultant: <strong>Marketing Masters Consultant Limited  </strong> </p>
+                <p>Pentrone House, 31 Church Street, Dagenham, RM10 9UR</p>
+                <p>Report Contact: Tunde Sodeinde (info@marketingmastersuk.com)</p>
+                <p id="date-of-report">Date of Report: </p>
+            </div>
+
+            <div class="print-test-results">
+                <table>
+                    <tr>
+                        <th>Tests,Units,Reference</th>
+                        <th>Results</th>
+                    </tr>
+                    <tr>
+                        <td>Energy Values, kCal/kJ per 100g,A20</td>
+                        <td id="print-energy"></td>
+                    </tr>
+                    <tr>
+                        <td>Protein (Nx6.25), g/100g,A24</td>
+                        <td id="print-protein"></td>
+                    </tr>
+                    <tr>
+                        <td>Fat, g/100g,A14</td>
+                        <td id="print-fat"></td>
+                    </tr>
+                    <tr>
+                        <td>Saturated Fat, g/100g,A19</td>
+                        <td id="print-saturated-fat"></td>
+                    </tr>
+                    <tr>
+                        <td>Mono-unsaturated Fat,g/100g,A19</td>
+                        <td id="print-mono-unsaturated-fat"></td>
+                    </tr>
+                    <tr>
+                        <td>Poly-unsaturated Fat,g/100g,A19</td>
+                        <td id="print-poly-unsaturated-fat"></td>
+                    </tr>
+                    <tr>
+                        <td>Available Carbohydrate,g/100g,A20</td>
+                        <td id="print-carbohydrates"></td>
+                    </tr>
+                    <tr>
+                        <td>Total Sugars, g/100g,A22</td>
+                        <td id="print-sugars"></td>
+                    </tr>
+                    <tr>
+                        <td>Dietary Fibre AOAC,g/100g,A17</td>
+                        <td id="print-dietary-fibre" ></td>
+                    </tr>
+                    <tr>
+                        <td>Sodium,mg/100g,A16</td>
+                        <td id="print-sodium"></td>
+                    </tr>
+                    <tr>
+                        <td>Moisture, g/100g,A2</td>
+                        <td id="print-moisture"></td>
+                    </tr>
+                    <tr>
+                        <td>Ash, g/100g,A3</td>
+                        <td id="print-ash"></td>
+                    </tr>
+                    <tr>
+                        <td>Salt (Calculated, Sodium x 2.5), g/100g, A16</td>
+                        <td id="print-salt"></td>
+                    </tr>
+                </table>
+
+            </div>
 
             <div id="calculated-results-container"> 
                 <div class="back-of-pack-container">
@@ -180,6 +297,14 @@
                     
                 </div>
     
+            </div>
+
+            <div class="print-legal-footer">
+                <p id="reviewed-by">Results Reviewed and Authorised By: <img id="signature" src="signature.png"/> <br/>
+                    <strong> Christopher Murgatroyd MChem. HEAD OF PROJECTS AND ANALYTICS </strong> </p> 
+                  
+                   
+                <p>The results detailed on this report relate only to the items tested. The samples detailed on this report were considered to be in a satisfactory condition on receipt, unless otherwise stated.Tests marked '#' in this report are not included in the UKAS accreditation of the laboratory. Tests marked '*' were tested according to the ISO 17025 standard by a subcontract laboratory. Tests marked '**' were tested using a non-accredited method at a subcontract laboratory. Opinions and interpretations contained herein are outside the scope of UKAS accreditation. Calculations of energy values are performed according to Regulation (EU) No 1169/2011 that takes into account contribution from dietary fibre where requested. Unless reported, alcohol, polyols and organic acids have not been considered in the energy calculation. Calculations of meat content are performed according to Meat Product Regulations 2003 (amended 2008) and are not applicable to QUID regulations. Meat contents are corrected for cereal fillers where known to be added, but are not corrected for other sources of protein including; soya; caseinate; milk powder and non-meat sources of fat. Meat content may be an overestimate if connective tissue analysis is not requested. '&lt; ' means less than.' &gt;' means greater than.' ND' means not detected.</p>
             </div>
 
 
