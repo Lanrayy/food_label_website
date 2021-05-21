@@ -126,7 +126,7 @@ button:hover{
     height:300px;
     width: 500px;
     background-color: white;
-    padding: 20px;
+    padding: 26px;
     border: 1px solid black;
     display: none;
     text-align: center;
@@ -172,6 +172,7 @@ button:hover{
     flex-direction: row;
     justify-content: center;
     padding-top: 10px;
+    
 }
 
 #typical-values{
@@ -258,6 +259,10 @@ button:hover{
 /* PRINT STYLES */
 @media print{
 
+    body{
+        font-size: 10px;
+    }
+
     .page-container{
         height: inherit;
     }
@@ -271,8 +276,9 @@ button:hover{
     }
 
     #calculated-results-container{
-        height: 390px;
+        height: 370px;
         width: 100%;
+        margin-top: 5px;
     }
 
     /* BACK OF PACK PRINT STYLES */
@@ -298,15 +304,21 @@ button:hover{
         height: 40px;
     }
 
-    .front-of-pack-container h1{
-        font-size: 14px;
-        margin-bottom: 10px;
+    .front-of-pack-container{
+        height: 150px;
+        padding: 8px;
     }
 
-    .front-of-pack-container{
-        height: 170px;
-        padding: 10px;
+    .front-of-pack-container h1{
+        font-size: 14px;
+
     }
+
+    .typical-values-notice{
+        padding-top: 5px;
+    }
+
+
 
     .front-of-pack-box{
         height: 90px;
@@ -314,6 +326,7 @@ button:hover{
 
     .test-results-container{
         display: none;
+        
     }
 
 
@@ -347,7 +360,7 @@ button:hover{
 
     .print-test-results{
         display: flex;
-        margin-top: 10px;
+        margin-top: 5px;
 
     }
 
@@ -370,7 +383,7 @@ button:hover{
     }
 
     #reviewed-by{
-        padding: 8px 0px;
+        padding-bottom: 5px;
     }
 
     #signature{
@@ -379,11 +392,13 @@ button:hover{
 
     #footer{
         display: none;
+        
 
     }
 }
 
 
+/* STYLES FOR MOBILE VIEW */
 @media screen and (max-width:375px){
 
     .page-container{
