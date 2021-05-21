@@ -3,6 +3,7 @@ $(function(){
     $("#submit-button").on("click",function(){
 
         // COLLECT THE INFOMRATION NEEDED
+        var description_of_sample = document.querySelector('#name-of-client').value;
         var energyKJ = document.querySelector('#energyKJ').value;
         var energyKcal = document.querySelector('#energyKcal').value;
         var protein = document.querySelector('#protein').value;
@@ -19,7 +20,6 @@ $(function(){
         var salt = document.querySelector('#salt').value;
         var date = document.querySelector('#date').value;
 
-        console.log(date);
 
 
         // DISPLAY the back of pack information
@@ -59,6 +59,9 @@ $(function(){
         $("#print-moisture").html(moisture);
         $("#print-ash").html(ash);
         $("#date-of-report").html("Date of report: " + date);
+        $("#description-of-sample").html("Description of sample: " + description_of_sample);
+
+
 
 
         // CALCULATE FRONT OF PACK INFORMATION
@@ -134,7 +137,7 @@ $(function(){
             carbohydrates = 0;
         }
 
-        
+    
         //Calculate FOP percentages
         var energy_fop_percentage = ((energyKJ/8400)* 100).toFixed(0);
         var fop_fat_percentage = ((fat/70)* 100).toFixed(0);
@@ -211,22 +214,6 @@ $(function(){
         {
             $("#salt-colour").css({"background-color":"orange"});
         }
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
 
 
         //SHow the results
