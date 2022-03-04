@@ -35,6 +35,9 @@ $(function(){
         //Back of pack carbohydrates
         $("#bop-carbohydrates").html(carbohydrates+"g");
 
+        $("#bop-sugars").html(sugars+"g");
+
+    
         //Back of pack protein 
         $("#bop-protein").html(protein+"g");
 
